@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto MVP Puc Rio</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h1>Gerenciamento Escola</h1>
+        </div>
+        <div class="banner">
+            <img src="img/imagem.JPG" alt="Desenho de uma sala de aula">
+        </div>
+    </header>
+
+    <section class="cadastro">
+        <h2>Cadastrar Turma</h2>
+        <form id="formTurma">
+          <input type="text" id="nomeTurma" placeholder="Nome da Turma" required />
+          <select id="turmaAtiva">
+            <option value="true">Ativa</option>
+            <option value="false">Inativa</option>
+          </select>
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+    
+      <section class="cadastro">
+        <h2>Cadastrar Aluno</h2>
+        <form id="formAluno">
+          <input type="text" id="nomeAluno" placeholder="Nome do Aluno" required />
+          <input type="email" id="emailAluno" placeholder="Email" required />
+          <input type="number" id="faltasAluno" placeholder="Faltas" required />
+          <input type="number" id="turmaIdAluno" placeholder="ID da Turma" required />
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+    
+      <section id="listarAlunos" class="pagina">
+        <h2>Alunos Cadastrados</h2>
+        <ul id="listaAlunos"></ul>
+      </section>
+    
+      <section id="listarTurmas" class="pagina">
+        <h2>Turmas Cadastradas</h2>
+        <ul id="listaTurmas"></ul>
+      </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
